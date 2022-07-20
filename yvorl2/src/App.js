@@ -21,9 +21,7 @@ function App() {
         <div className="App">
           <CanvasComponent caption={caption} />
           <Overlay ref={overlay} caption={caption} scroll={scroll} />
-          {/* <BigLogo scroll={scroll} caption={caption} />
-          
-          <ParticlesBackGround />  */}
+          {/* <ParticlesBackGround /> */}
         </div>
       ) : (<Loading />)}
     </>

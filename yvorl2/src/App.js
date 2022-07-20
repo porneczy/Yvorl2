@@ -2,6 +2,7 @@ import React, {  useRef, useState, useEffect } from "react"
 import './App.css';
 import Overlay from "./components/Overlay";
 import Loading from "./components/Loading";
+import CanvasComponent from "./components/Canvas";
 
 function App() {
   const overlay = useRef()
@@ -18,6 +19,7 @@ function App() {
     <>
     {loading === false ? (
         <div className="App">
+          <CanvasComponent caption={caption} />
           <Overlay ref={overlay} caption={caption} scroll={scroll} />
           {/* <BigLogo scroll={scroll} caption={caption} />
           

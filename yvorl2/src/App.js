@@ -3,6 +3,7 @@ import './App.css';
 import Overlay from "./components/Overlay";
 import Loading from "./components/Loading";
 import CanvasComponent from "./components/Canvas";
+import ParticlesBackGround from "./components/ParticlesBackGround";
 
 function App() {
   const overlay = useRef()
@@ -21,7 +22,7 @@ function App() {
         <div className="App">
           <CanvasComponent caption={caption} />
           <Overlay ref={overlay} caption={caption} scroll={scroll} />
-          {/* <ParticlesBackGround /> */}
+          <ParticlesBackGround />
         </div>
       ) : (<Loading />)}
     </>

@@ -6,7 +6,7 @@ import Lights from './Lights'
 
 export default function Model({ caption, ...props }) {
     const group = useRef()
-    const { nodes, materials, animations, cameras } = useGLTF('modelS2.glb')
+    const { nodes, materials, animations, cameras } = useGLTF('/modelS2.glb')
     const { actions } = useAnimations(animations, group)
 
     useEffect(() => void (actions['Camera.001Action'].play().paused = true), [actions])
@@ -41,4 +41,4 @@ export default function Model({ caption, ...props }) {
     )
 }
 
-useGLTF.preload('modelS2.glb')
+useGLTF.preload('/modelS2.glb')

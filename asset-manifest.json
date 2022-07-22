@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/yvorl2/build/static/css/main.7fdd2720.css",
-    "main.js": "/yvorl2/build/static/js/main.102eb70c.js",
-    "static/js/787.c97fb8f8.chunk.js": "/yvorl2/build/static/js/787.c97fb8f8.chunk.js",
-    "index.html": "/yvorl2/build/index.html",
-    "main.7fdd2720.css.map": "/yvorl2/build/static/css/main.7fdd2720.css.map",
-    "main.102eb70c.js.map": "/yvorl2/build/static/js/main.102eb70c.js.map",
-    "787.c97fb8f8.chunk.js.map": "/yvorl2/build/static/js/787.c97fb8f8.chunk.js.map"
+    "main.css": "/Yvorl2/static/css/main.7fdd2720.css",
+    "main.js": "/Yvorl2/static/js/main.4243c193.js",
+    "static/js/787.c97fb8f8.chunk.js": "/Yvorl2/static/js/787.c97fb8f8.chunk.js",
+    "index.html": "/Yvorl2/index.html",
+    "main.7fdd2720.css.map": "/Yvorl2/static/css/main.7fdd2720.css.map",
+    "main.4243c193.js.map": "/Yvorl2/static/js/main.4243c193.js.map",
+    "787.c97fb8f8.chunk.js.map": "/Yvorl2/static/js/787.c97fb8f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fdd2720.css",
-    "static/js/main.102eb70c.js"
+    "static/js/main.4243c193.js"
   ]
 }

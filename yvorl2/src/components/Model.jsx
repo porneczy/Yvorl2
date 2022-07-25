@@ -1,13 +1,15 @@
 import * as THREE from 'three'
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, PerspectiveCamera, useAnimations } from '@react-three/drei'
-import { useFrame, useLoader } from '@react-three/fiber'
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useFrame } from '@react-three/fiber'
 import Lights from './Lights'
+import BigLogo from "./modelS2.glb"
+
 
 export default function Model({ caption, ...props }) {
+
     const group = useRef()
-    const { nodes, materials, animations, cameras } = useLoader(GLTFLoader, "modelS2.glb")
+    const { nodes, materials, animations, cameras } = useGLTF(BigLogo)
     const { actions } = useAnimations(animations, group)
 
     useEffect(() => void (actions['Camera.001Action'].play().paused = true), [actions])
@@ -18,7 +20,6 @@ export default function Model({ caption, ...props }) {
         const offset = caption.current.innerText * 5
         action.time = THREE.MathUtils.damp(action.time, (action.getClip().duration / 2) * offset / 2.5, 100, delta)
     })
-    console.log(materials.Y);
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Scene">
@@ -42,4 +43,4 @@ export default function Model({ caption, ...props }) {
     )
 }
 
-/* useGLTF.preload('/modelS2.glb') */
+useGLTF.preload(BigLogo)

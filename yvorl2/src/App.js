@@ -6,6 +6,7 @@ import CanvasComponent from "./components/Canvas";
 import ParticlesBackGround from "./components/ParticlesBackGround";
 
 function App() {
+  
   const overlay = useRef()
   const caption = useRef()
   const scroll = useRef(0)

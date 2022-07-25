@@ -1,10 +1,14 @@
 import React from 'react'
+import logoImg from "./loloattetszo.png"
 
 function Loading() {
     return (
-        <div className="loading">
-            <p>loading...</p>
+
+        <div class="container">
+            <div className="loader"></div>
+            <img src={logoImg} className="logoImg" alt="" srcset="" />
         </div>
+
     )
 }
 

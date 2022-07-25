@@ -81,6 +81,21 @@ body {
   margin-bottom: 0.25em;
 }
 
+@media only screen and (min-width: 2560px) {
+  .caption {
+    font-size: 10em;
+  }
+
+  .dot {
+    font-size: 2em;
+    max-width: 1200px;
+  }
+
+  /* .dot>h1 {
+    font-size: 10em;
+  } */
+}
+
 @media only screen and (max-width: 1000px) {
   .caption {
     font-size: 4em;
@@ -113,6 +128,6 @@ body {
   }
 
   .dot>h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 }

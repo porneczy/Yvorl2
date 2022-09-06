@@ -3,6 +3,7 @@ import React from 'react'
 function Sidebar({ caption, scroll }) {
     const handleClickCaptionChanger = (num) => {
         caption.current.innerText = num;
+        scroll.current = num;
     }
 
     return (

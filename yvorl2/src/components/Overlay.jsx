@@ -37,44 +37,44 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
 
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="cegunkrol" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="cegunkrol">Cégünkről</h1>
+                <h1>Cégünkről</h1>
                 Magyar tulajdonban lévő YVORL Informatikai Tanácsadó és Szolgáltató Kft. 2017 óta a kis-, közép- és nagyvállalatok informatikai szakembereinek tanácsadója. Munkatársaink fiatal, lendületes csapata mérnöki, gazdasági és informatikai tudással és szakmai tapasztalattal is rendelkezik, így az informatikai szaktanácsadás és szolgáltatás minden területén számíthat cégünkre.
 
                 info@yvorl.hu
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="szoftverfejlesztes" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="szoftverfejlesztes">Szoftverfejlesztés</h1>Cégünk alaptevékenysége informatikai rendszerek, egyedi szoftverek, adatbázisok tervezése és megvalósítása. Forduljon hozzánk bizalommal szoftverfejlesztési igényével, ötletével!
+                <h1>Szoftverfejlesztés</h1>Cégünk alaptevékenysége informatikai rendszerek, egyedi szoftverek, adatbázisok tervezése és megvalósítása. Forduljon hozzánk bizalommal szoftverfejlesztési igényével, ötletével!
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="webfejlesztes" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="webfejlesztes">Weboldal fejlesztés</h1>Cégünk jelentős szakmai tapasztalattal rendelkezik a webprogramozás területén. Vállaljuk webshopok, bemutatkozó oldalak, portálok tervezését, fejlesztését, valamint egyedi ötletek megvalósítását.
+                <h1>Weboldal fejlesztés</h1>Cégünk jelentős szakmai tapasztalattal rendelkezik a webprogramozás területén. Vállaljuk webshopok, bemutatkozó oldalak, portálok tervezését, fejlesztését, valamint egyedi ötletek megvalósítását.
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="tanacsadas" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="tanacsadas">Tanácsadás</h1>Felmérjük a vállalat igényeit, ennek megfelelően hozunk létre munkacsoportokat vagy készítünk tanulmányt, rendszertervet az Üzemeltetési, Biztonsági, Szoftverfejlesztési területeken. Igény szerint megtervezzük és megalkotjuk azokat az alkalmazásokat, amelyekkel a vállalkozás folyamatai standardizálhatók, optimalizálhatóak illetve automatizálhatók lesznek.
+                <h1>Tanácsadás</h1>Felmérjük a vállalat igényeit, ennek megfelelően hozunk létre munkacsoportokat vagy készítünk tanulmányt, rendszertervet az Üzemeltetési, Biztonsági, Szoftverfejlesztési területeken. Igény szerint megtervezzük és megalkotjuk azokat az alkalmazásokat, amelyekkel a vállalkozás folyamatai standardizálhatók, optimalizálhatóak illetve automatizálhatók lesznek.
 
                 Minden esetben az üzleti döntéshozók elvárásainak megfelelő, hatékony használatot biztosító megoldásokat ajánlunk és szállítunk és az általunk tett javaslatokra, illetve megvalósításokra garanciát is vállalunk.
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="projektvezetes" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="projektvezetes">Projektvezetés</h1>A projektmenedzsment szolgáltatás szigorú módszertani alapokon nyugvó tevékenység, ami lehetővé teszi a feladatok sikeres elvégzését. Az alkalmazott módszerek alapján a megfelelő projektszervezet felállítása, a feladatok előkészítése, a munkák levezénylése, a folyamatos kontrol gyakorlása tartozik a felelősségei közé. A projekt végrehajtása során alkalmazott kontrolling és jelentési rendszer lehetőséget biztosít a megrendelő részére az esetleges korrekciókra.
+                <h1>Projektvezetés</h1>A projektmenedzsment szolgáltatás szigorú módszertani alapokon nyugvó tevékenység, ami lehetővé teszi a feladatok sikeres elvégzését. Az alkalmazott módszerek alapján a megfelelő projektszervezet felállítása, a feladatok előkészítése, a munkák levezénylése, a folyamatos kontrol gyakorlása tartozik a felelősségei közé. A projekt végrehajtása során alkalmazott kontrolling és jelentési rendszer lehetőséget biztosít a megrendelő részére az esetleges korrekciókra.
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="rendszerintegracio" style={{ height: "200vh" }}>
             <div className="dot" >
-                <h1 id="rendszerintegracio">Rendszerintegráció</h1>A partnerünk informatikai alapinfrastruktúrájának tervezése, optimalizálása, illetve működésbeli támogatása. Mindez a hálózattervezéstől és annak kiépítéstől elindulva a munkaállomások különböző alkalmazásainak telepítésén, beállításán keresztül egészen a biztonságos internethasználat (tűzfalak és behatolásérzékelő-rendszerek) kialakításáig mindent magában foglalhat.
+                <h1>Rendszerintegráció</h1>A partnerünk informatikai alapinfrastruktúrájának tervezése, optimalizálása, illetve működésbeli támogatása. Mindez a hálózattervezéstől és annak kiépítéstől elindulva a munkaállomások különböző alkalmazásainak telepítésén, beállításán keresztül egészen a biztonságos internethasználat (tűzfalak és behatolásérzékelő-rendszerek) kialakításáig mindent magában foglalhat.
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="uzemeltetes" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="uzemeltetes">Üzemeltetés és támogatás</h1>Kihelyezett rendszergazdai szolgáltatásokat nyújtunk valamint karbantartjuk a vállalat informatikai infrastruktúráját képező eszközöket, legyen az Windows, Linux vagy bármilyen UNIX alapú rendszer.
+                <h1>Üzemeltetés és támogatás</h1>Kihelyezett rendszergazdai szolgáltatásokat nyújtunk valamint karbantartjuk a vállalat informatikai infrastruktúráját képező eszközöket, legyen az Windows, Linux vagy bármilyen UNIX alapú rendszer.
 
                 Szerverkarbantartás
                 Munkaállomások karbantartása
@@ -83,9 +83,9 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
                 Adatbázis-rendszerek üzemeltetése
             </div>
         </div>
-        <div style={{ height: "200vh" }}>
+        <div id="referenciak" style={{ height: "200vh" }}>
             <div className="dot">
-                <h1 id="referenciak">Referenciák</h1>
+                <h1>Referenciák</h1>
                 TELEKOM Nyrt.
                 NRG Services Kft.
                 Fusiongate Kft.	DSG Services Kft

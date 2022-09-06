@@ -9,7 +9,7 @@ function CanvasComponent({ caption }) {
         <>
             <Canvas style={{ position: 'fixed' }}  >
                 <Suspense fallback={
-                    <Html center className="loader">
+                    <Html center className="loader2">
                         LOADING
                     </Html>
                 }>

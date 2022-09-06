@@ -4,9 +4,9 @@ import logoImg from "./loloattetszo.png"
 function Loading() {
     return (
 
-        <div class="container">
+        <div className="container">
             <div className="loader"></div>
-            <img src={logoImg} className="logoImg" alt="" srcset="" />
+            <img srcSet={logoImg} className="logoImg" alt="" />
         </div>
 
     )

@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react"
-
+/* eslint-disable */
 const Overlay = forwardRef(({ caption, scroll }, ref) => (
     <div
         ref={ref}
@@ -35,15 +35,19 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
             <div className="dot">
                 <h1>Yvorl Kft.</h1>
             </div>
-            <div class="mouse_scroll">
 
-                <div class="mouse">
-                    <div class="wheel"></div>
+            <div className="mouse_scroll">
+                <div className="btnDiv">
+                    <a className="btn btn-white">info@yvorl.hu</a>
+                </div>
+
+                <div className="mouse">
+                    <div className="wheel"></div>
                 </div>
                 <div>
-                    <span class="m_scroll_arrows unu"></span>
-                    <span class="m_scroll_arrows doi"></span>
-                    <span class="m_scroll_arrows trei"></span>
+                    <span className="m_scroll_arrows unu"></span>
+                    <span className="m_scroll_arrows doi"></span>
+                    <span className="m_scroll_arrows trei"></span>
                 </div>
             </div>
         </div>
@@ -51,9 +55,9 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
             <div className="dot">
                 <h1>Cégünkről</h1>
                 Magyar tulajdonban lévő YVORL Informatikai Tanácsadó és Szolgáltató Kft. 2017 óta a kis-, közép- és nagyvállalatok informatikai szakembereinek tanácsadója. Munkatársaink fiatal, lendületes csapata mérnöki, gazdasági és informatikai tudással és szakmai tapasztalattal is rendelkezik, így az informatikai szaktanácsadás és szolgáltatás minden területén számíthat cégünkre.
-
-                info@yvorl.hu
             </div>
+
+
         </div>
         <div id="szoftverfejlesztes" style={{ height: "200vh" }}>
             <div className="dot">

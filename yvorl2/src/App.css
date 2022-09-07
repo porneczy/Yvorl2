@@ -12,12 +12,12 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  user-select: none;
+  /* user-select: none; */
   overflow: hidden;
 }
 
 #root {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .scroll {
@@ -37,7 +37,7 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  background-color: #101010;
+  background-color: rgb(27, 27, 27);
   /* background: radial-gradient(circle at bottom center, #212121 0%, #101010 80%); */
   font-family: "Inter var", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -400,6 +400,52 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 
 .nav ul li a:hover {
   color: white;
+}
+
+/* info mail button */
+.btnDiv {
+  margin-bottom: 40px;
+
+  transform: translateX(-320%);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+.btn:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-white {
+  border: solid 2px #fff;
+  background: transparent;
+  color: #fff !important;
+}
+
+.btn-white:hover {
+  border: solid 2px #fff;
+  background: #fff;
+  color: #1f1f1f !important;
 }
 
 

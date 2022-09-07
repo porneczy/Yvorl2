@@ -34,7 +34,17 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
         <div id="home" style={{ height: "400vh" }}>
             <div className="dot">
                 <h1>Yvorl Kft.</h1>
+            </div>
+            <div class="mouse_scroll">
 
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
             </div>
         </div>
         <div id="cegunkrol" style={{ height: "200vh" }}>

@@ -77,6 +77,7 @@ function Sidebar({ caption, scroll }) {
                 </nav>
             </div>
 
+            {/* smart screen hamburger menu */}
             <input type="checkbox" class="toggler" />
             <div class="hamburger"><div></div></div>
             <div class="menu">
@@ -147,6 +148,7 @@ function Sidebar({ caption, scroll }) {
                     </ul>
                 </div>
             </div>
+
         </>
     )
 }

@@ -30,6 +30,7 @@ body,
 
 .scroll>div {
   scroll-snap-align: start;
+
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 }
 
 .caption {
-  /* display: none; */
+  display: none;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -62,13 +63,17 @@ body {
   position: sticky;
   top: 0px;
   display: inline-block;
-  max-width: 600px;
+  max-width: 760px;
   padding: 0;
   padding: 80px;
   color: #a0a0a0;
-  line-height: 1.6em;
+  line-height: 2.6em;
   font-size: 15px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
 }
 
 .dot>h1 {
@@ -193,6 +198,169 @@ body {
   height: 100vh;
   font-size: 0.85em;
   right: 0;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.sidebar-smallScreen {
+  display: none;
+}
+
+
+
+.toggler {
+  /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  height: 40px;
+  width: 60px;
+  padding: 0.6rem;
+
+  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+
+.hamburger>div {
+  position: relative;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 2px;
+  width: 60%;
+  transition: all 0.4s ease;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+.hamburger>div::before,
+.hamburger>div::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  background: white;
+  width: 100%;
+  height: 2px;
+  transition: all 0.4s ease;
+}
+
+.hamburger>div::after {
+  top: 10px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.toggler:checked+.hamburger>div {
+  background: rgba(0, 0, 0, 0);
+}
+
+.toggler:checked+.hamburger>div::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: rgb(255, 255, 255);
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.toggler:checked+.hamburger>div::after {
+  top: 0;
+  transform: rotate(135deg);
+  background: rgb(255, 255, 255);
+}
+
+
+/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+.menu {
+  background: rgb(255, 255, 255);
+  width: 0%;
+  height: 100vh;
+  /* APPLYING TRANSITION TO THE MENU :  */
+  position: relative;
+
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+.toggler:checked~.menu {
+  width: 70%;
+}
+
+
+
+/* STYLING THE LIST :  */
+
+.menu>div>ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  padding-left: 10px;
+  /* HIDDEN INITIALLY  :  */
+
+  visibility: hidden;
+}
+
+.menu>div>ul>li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.menu>div>ul>li>a {
+  line-height: 4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  color: #7e7e7e;
+  display: block;
+  transition: all ease-out 50ms;
+}
+
+/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+.toggler:checked~.menu>div>ul {
+  transition: visibility 0.4s ease;
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+
+.toggler:checked~.menu>div>ul>li>a:hover {
+  color: rgb(99, 99, 99);
+}
+
+@media screen and (max-width: 1150px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .toggler,
+  .hamburger {
+    display: none;
+  }
 }
 
 .nav {
@@ -202,10 +370,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-weight: bold;
+
 }
 
 .nav ul {
   list-style: none;
+
 }
 
 .nav li {

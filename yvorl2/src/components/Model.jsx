@@ -4,7 +4,7 @@ import { useGLTF, PerspectiveCamera, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import Lights from './Lights'
 import BigLogo from "./modelS2.glb"
-
+/* eslint-disable */
 
 export default function Model({ caption, ...props }) {
 

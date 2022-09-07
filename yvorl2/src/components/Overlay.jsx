@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react"
+import SendMail from "./SendMail"
 /* eslint-disable */
 const Overlay = forwardRef(({ caption, scroll }, ref) => (
     <div
@@ -37,9 +38,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
             </div>
 
             <div className="mouse_scroll">
-                <div className="btnDiv">
-                    <a className="btn btn-white">info@yvorl.hu</a>
-                </div>
+                <SendMail />
 
                 <div className="mouse">
                     <div className="wheel"></div>

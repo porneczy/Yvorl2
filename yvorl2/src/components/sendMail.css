@@ -1,0 +1,56 @@
+form {
+    padding: 30px;
+}
+
+.feedback-input {
+    color: rgb(0, 0, 0);
+    line-height: 4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    font-size: 12px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+.feedback-input:focus {
+    border: 2px solid #000000;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+
+    width: 100%;
+    background: #333333;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    line-height: 4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    border: 2px solid #000000;
+}
+
+[type="submit"]:hover {
+    color: #333333;
+    background: rgb(238, 238, 238);
+    border: 2px solid #000000;
+}
